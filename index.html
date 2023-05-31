@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator pomysłów na prezenty</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <form action="generate_gift.php" method="post">
+        <label for="gender">Płec:</label>
+        <select name="gender" id="gender">
+            <option value="female">Kobieta</option>
+            <option value="male">Mężczyzna</option>
+            <option value="other">Inna</option>
+        </select>
+        <label for="age">Wiek:</label>
+        <input type="number" id="age" name="age">
+        <label for="interests">Zainteresowania:</label>
+        <input type="text" id="interests" name="interests">
+        <input type="submit" value="Generuj pomysły">
+    </form>
+
+    <div id="gift-ideas"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
